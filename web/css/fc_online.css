@@ -21,7 +21,7 @@ header { background: #111; height: 60px; border-bottom: 1px solid #333; position
     height: 100%;
     /* 배경 이미지를 메시 사진으로 설정 */
     background: linear-gradient(to right, rgba(0,0,0,0.6), transparent), 
-                url('메시.jpg') no-repeat center/cover;
+                url('/web/images/메시.jpg') no-repeat center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
