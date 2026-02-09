@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube</title>
+    <link rel="icon" href="https://www.google.com/s2/favicons?domain=youtube.com&sz=128">
+</head>
+    
+    <link rel="icon" href="https://www.youtube.com/s/desktop/28b67e7a/img/favicon_144x144.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/youtube.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <i class="fa-solid fa-bars" id="menu-icon" title="메뉴"></i>
+            <div class="logo">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </div>
+        </div>
+        
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" placeholder="검색">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="mic-icon">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <i class="fa-solid fa-video" title="만들기"></i>
+            <i class="fa-solid fa-bell" title="알림"></i>
+            <div class="user-avatar">J</div>
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar" id="sidebar">
+            <div class="nav-section">
+                <div class="nav-item active"><i class="fa-solid fa-house"></i><span>홈</span></div>
+                <div class="nav-item"><i class="fa-solid fa-bolt"></i><span>Shorts</span></div>
+                <div class="nav-item"><i class="fa-solid fa-layer-group"></i><span>구독</span></div>
+            </div>
+            <hr>
+            <div class="nav-section">
+                <div class="section-title">나 ></div>
+                <div class="nav-item"><i class="fa-solid fa-user-tie"></i><span>내 채널</span></div>
+                <div class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i><span>시청 기록</span></div>
+                <div class="nav-item"><i class="fa-solid fa-play"></i><span>내 동영상</span></div>
+                <div class="nav-item"><i class="fa-solid fa-clock"></i><span>나중에 볼 동영상</span></div>
+                <div class="nav-item"><i class="fa-solid fa-thumbs-up"></i><span>좋아요 표시한 동영상</span></div>
+            </div>
+            <hr>
+            <div class="nav-section">
+                <div class="section-title">탐색</div>
+                <div class="nav-item"><i class="fa-solid fa-fire"></i><span>인기 급상승</span></div>
+                <div class="nav-item"><i class="fa-solid fa-music"></i><span>음악</span></div>
+                <div class="nav-item"><i class="fa-solid fa-gamepad"></i><span>게임</span></div>
+                <div class="nav-item"><i class="fa-solid fa-trophy"></i><span>스포츠</span></div>
+            </div>
+        </aside>
+
+        <section class="content" id="main-content">
+            <nav class="filter-bar">
+                <button class="filter-chip active">전체</button>
+                <button class="filter-chip">음악</button>
+                <button class="filter-chip">실시간</button>
+                <button class="filter-chip">게임</button>
+                <button class="filter-chip">믹스</button>
+                <button class="filter-chip">축구</button>
+                <button class="filter-chip">액션 어드벤처 게임</button>
+                <button class="filter-chip">만화 영화</button>
+                <button class="filter-chip">요리</button>
+                <button class="filter-chip">최근에 업로드된 동영상</button>
+            </nav>
+
+            <div class="video-grid" id="videoGrid">
+                </div>
+        </section>
+    </main>
+
+    <script src="../js/youtube.js"></script>
+</body>
+</html>

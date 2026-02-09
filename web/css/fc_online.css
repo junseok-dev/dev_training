@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; background-color: #f0f0f0; overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; }
+
+/* Header GNB */
+header { background: #111; height: 60px; border-bottom: 1px solid #333; position: sticky; top: 0; z-index: 1000; }
+.gnb-container { max-width: 1260px; margin: 0 auto; display: flex; align-items: center; height: 100%; padding: 0 20px; }
+.main-nav ul { display: flex; list-style: none; margin-left: 30px; }
+.main-nav ul li a { color: #ccc; text-decoration: none; font-size: 14px; font-weight: 700; padding: 0 15px; transition: 0.3s; }
+.main-nav ul li a:hover { color: #fff; }
+
+.top-util { margin-left: auto; display: flex; align-items: center; gap: 20px; color: #888; font-size: 13px; }
+.download-link { color: #f5c518; text-decoration: none; font-weight: bold; }
+.login-link { color: #888; text-decoration: none; }
+
+/* Main Visual & Game Start */
+.main-visual { height: 420px; background: #222; position: relative; }
+.visual-banner {
+    height: 100%;
+    /* 배경 이미지를 메시 사진으로 설정 */
+    background: linear-gradient(to right, rgba(0,0,0,0.6), transparent), 
+                url('메시.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.visual-content h2 { font-size: 48px; margin: 15px 0; font-weight: 300; }
+.visual-content h2 strong { color: #f5c518; font-weight: 900; }
+.btn-pre-download { display: inline-block; padding: 12px 35px; background: #4caf50; color: #fff; text-decoration: none; font-weight: bold; border-radius: 50px; }
+
+/* 노란색 게임 시작 버튼 섹션 */
+.game-start-area { position: absolute; right: 10%; top: 0; bottom: 0; display: flex; align-items: center; }
+.btn-game-start {
+    background: #f5c518; width: 140px; height: 140px; border: none; cursor: pointer;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.3); transition: 0.2s;
+}
+.btn-game-start:hover { transform: scale(1.05); background: #ffda44; }
+.btn-game-start span { font-size: 11px; font-weight: 900; color: #333; margin-bottom: 5px; }
+.btn-game-start strong { font-size: 24px; font-weight: 900; color: #000; letter-spacing: -1px; }
+
+/* Content Grid */
+.content-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 10px; }
+.grid-card { height: 260px; padding: 30px; position: relative; overflow: hidden; color: #fff; cursor: pointer; }
+.grid-card.wide { grid-column: span 2; }
+
+.dark-bg { background: #111; border: 1px solid #333; }
+.purple-bg { background: #4a148c; display: flex; align-items: center; justify-content: center; }
+.light-bg { background: #fff; color: #333; border: 1px solid #ddd; }
+
+.card-text p { font-size: 13px; margin-bottom: 10px; opacity: 0.8; }
+.card-text h3 { font-size: 32px; font-weight: 900; line-height: 1.2; }
+.btn-yellow { background: #f5c518; border: none; padding: 10px 20px; font-weight: bold; margin-top: 20px; cursor: pointer; }
+
+.card-footer { position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px 20px; background: rgba(0,0,0,0.5); font-size: 12px; }
