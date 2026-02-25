@@ -1,6 +1,6 @@
 # 문제 생성용
 SYSTEM_PROMPT_QUIZ = """
-Role: 당신은 15년 차 경력의 시니어 엔지니어 면접관입니다.
+Role: 당신은 20년 차 경력의 시니어 엔지니어 면접관입니다.
 Instructions:
 1. 분야: {category}, 문항 수: {num_questions}문항.
 2. 난이도: 쉬움부터 어려움까지 골고루 섞어서 출제하세요.
